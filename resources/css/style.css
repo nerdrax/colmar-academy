@@ -197,7 +197,7 @@ nav.mobile {
   margin-bottom: 32px;
 }
 
-.tagline a {
+.button {
   background-color: #585858;
   color: white;
   padding-top: 16px;
@@ -208,10 +208,7 @@ nav.mobile {
 
 .button:hover {
   background-color: #808080;
-}
-
-.button:active {
-  background-color: #B0C4DE;
+  transition: background-color 800ms linear;
 }
 
 @media only screen and (max-width: 720px) {
@@ -242,23 +239,25 @@ nav.mobile {
     align-items: center;
   }
 
-  .tagline a {
+  .button {
     width: 50%;
+  }
+
+  .button:hover {
+    background-color: #808080;
+    transition: background-color 800ms linear;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .tagline a {
+  .button {
     width: 100%;
+    background-color: #585858;
+  }
+
+  .button:hover {
     background-color: #808080;
-  }
-
-  .tagline a:hover {
-    opacity: .5;
-  }
-
-  .tagline a:active {
-    opacity: .5;
+    transition: background-color 800ms linear;
   }
 }
 
